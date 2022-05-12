@@ -28,7 +28,7 @@ function App() {
                     console.log(obj);
                     setToDos(toDos.filter(obj2 => {
                       if (obj2.id === obj.id) {
-                        obj2.status = e.target.c
+                        obj2.status = e.target.checked
                       }
                       return obj2
                     }))
@@ -44,7 +44,7 @@ function App() {
         {toDos.map((obj) => {
           if (obj.status) {
             return (
-              <div className="left">
+              <div className="right">
                 <center>
                   <h1 >{obj.text}</h1>
                 </center>
